@@ -58,7 +58,7 @@ const loadModel = async () => {
 	// scene.add(cube);
 
 	//sandbox
-	const glb = await loader.loadAsync('/assets/island.glb');
+	const glb = await loader.loadAsync('assets/island.glb');
 
 	//将模型添加至场景
 	glb.scene.scale.set(0.1, 0.1, 0.1);
@@ -175,8 +175,8 @@ const hdr = new THREE.WebGLRenderTarget(1, 1, {
 
 //plane
 const textureLoader = new THREE.TextureLoader();
-const foam = textureLoader.load('../assets/foam.png');
-const normal = textureLoader.load('../assets/normal.jpg');
+const foam = textureLoader.load('assets/foam.png');
+const normal = textureLoader.load('assets/normal.jpg');
 normal.wrapS = normal.wrapT = foam.wrapS = foam.wrapT = THREE.RepeatWrapping;
 const geometry = new THREE.PlaneGeometry(1300, 1300, 200, 200);
 geometry.computeTangents();
