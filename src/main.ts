@@ -58,7 +58,7 @@ const loadModel = async () => {
 	// scene.add(cube);
 
 	//sandbox
-	const glb = await loader.loadAsync('../assets/island.glb');
+	const glb = await loader.loadAsync('/assets/island.glb');
 
 	//将模型添加至场景
 	glb.scene.scale.set(0.1, 0.1, 0.1);
